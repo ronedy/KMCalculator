@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="CALCULADORA KM"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        />
+
+
+
+
+        <EditText
+            android:id="@+id/tv_dis"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginBottom="70dp"
+            android:textSize="30dp"
+            android:inputType="none"
+
+            android:hint=""
+
+            tools:textSize="24sp" />
+
+
+
+        <!--Aca empieza el layout de numeros -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="10dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnEcuacionDosGrado"
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="irEcuacion"
+                    android:text="Ecuación de segundo grado" />
+            </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnOff"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="Salir"
+                android:text="OFF" />
+
+            <Button
+                android:id="@+id/btnRnd"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="Rnd"
+                android:text="RND" />
+
+            <Button
+                android:id="@+id/btnDel"
+
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="10dp"
+                android:onClick="BorrarUltimo"
+                android:text="DEL" />
+
+            <Button
+                android:id="@+id/btnAc"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="BorrarTodo"
+                android:text="AC" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnFactorial"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="Factorial"
+                android:text="n!" />
+
+            <Button
+                android:id="@+id/btnXelevadoN"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="Exponente"
+                android:text="X^N" />
+
+            <Button
+                android:id="@+id/btnXelevado2"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="ExpCuadrado"
+                android:text="X^2" />
+
+            <Button
+                android:id="@+id/btnXelevado3"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="ExpCubico"
+                android:text="X^3" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSen"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="Sen"
+                android:text="sen" />
+
+            <Button
+                android:id="@+id/btnCos"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="Cos"
+                android:text="cos" />
+
+            <Button
+                android:id="@+id/btnTan"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="Tan"
+                android:text="tan" />
+
+            <Button
+                android:id="@+id/btnSqrt"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="Raiz"
+                android:text="SQRT" />
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="bSiete"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="bOcho"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="bNueve"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/btnDividir"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="Dividir"
+                android:text="/" />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="bCuatro"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="bCinco"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="bSeis"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/btnMultiplicar"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="Multiplicar"
+                android:text="*" />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="bUno"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="bDos"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="bTres"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/btnRestar"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="85dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="Restar"
+                android:text="-" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="85dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="bCero"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/btnPunto"
+                android:layout_width="85dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="bPunto"
+                android:text="." />
+
+            <Button
+                android:id="@+id/btnIgual"
+                android:layout_width="85dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="bIgual"
+                android:text="="
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnSumar"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="85dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="Sumar"
+                android:text="+" />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>  <!--Aca termina el layout de numeros -->
+
+
+
+
+</LinearLayout>
